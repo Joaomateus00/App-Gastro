@@ -32,7 +32,7 @@ function login(){
     auth.setPersistence(firebase.auth.Auth.Persistence.SESSION).then(()=>{
         auth.signInWithEmailAndPassword(userEmail, userPassword).then(loggedUser =>{
             if (loggedUser){
-                window.location.href = 'novoUsuario.html';
+                window.location.href = 'EscolherChef.html';
                 alert ('Novo login as '+ new Date())
             }
         }).catch(error =>{
@@ -41,14 +41,4 @@ function login(){
     })
 }
 
-/*SCRIPT PEDIDOS*/
-//Para Comida Tailandesa
-//Entre 4 e 8 pessoas = 70;
-//Entre 9 e 12 pessoas = 65;
-//Mais de 12 pessoas = 60;
-
-//Para Comida Oriental
-//Entre 4 e 8 pessoas = 120 reais;
-//Entre 9 e 12 pessoas = 100 reais;
-//Mais de 12 pessoas = 80 reais;
 

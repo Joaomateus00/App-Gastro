@@ -81,25 +81,30 @@ h1{
     display: grid;
     justify-items: center;
     align-items: flex-start;
+    gap: 50px;
 }
 .c1{
-    background-color: red;
+    background: linear-gradient(black, goldenrod);
     font-size: 30px;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .c2{
-    background-color: yellow;
+    background: linear-gradient(black, goldenrod);
     font-size: 30px;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .c3{
-    background-color: beige;
+    background: linear-gradient(black, goldenrod);
     font-size: 30px;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .c4{
-    background-color: aqua;
+    background: linear-gradient(black, goldenrod);
     font-size: 30px;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 img,a {
@@ -155,22 +160,50 @@ img,a {
 /*CSS FINALIZANDO PEDIDO*/
 .form-pedido{
     width: 300px;
-    height: 200px;
-    margin: auto;
+    height: 300px;
     position: relative;
-    left: 50%;
-    top:  0%;
+    left: 33%;
+    top:  -10%;
 }
-.form-pedido, input{
-    width: 80%;
+.form-pedido,input,button{
+    width: 70%;
+    box-sizing: border-box;
+    padding: 12px;
 }
-#foodstype{
-    width: 80%;
+#foodtype{
+    width: 70%;
     text-align: center;
+    padding: 12px;
 }
 #resultado{
     position: absolute;
     color: black;
-    top: 480px;
-    left: 140px;
+    top: 400px;
+    left: 520px;
+    background-color: white;
+}
+#finalizarPedido{
+    width: 300px;
+    position: absolute;
+    top: 450px;
+    left: 560px;
+}
+#pedido{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 100px;
+   
+}
+#voltar{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+.conteiner-finalizarPed{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+   
 }
