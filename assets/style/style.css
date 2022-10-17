@@ -244,8 +244,8 @@ img,a {
         text-align: center;
     }
     .foodPictures{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         left: 0%;
     }
     #backToStart{
@@ -266,6 +266,12 @@ img,a {
     }
     #foodtype{
         width: 80%;
+    }
+    #resultado{
+        left: 5%;
+        top: 50%;
+        font-size: 15px;
+        text-align: center;
     }
     #backToStartPedido{
         top: 65%;
