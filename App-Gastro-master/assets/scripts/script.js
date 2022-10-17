@@ -33,7 +33,7 @@ function login(){
         auth.signInWithEmailAndPassword(userEmail, userPassword).then(loggedUser =>{
             if (loggedUser){
                 window.location.href = 'EscolherChef.html';
-                alert ('Novo login as '+ new Date())
+                alert ('Novo login as '+ new Date().toLocaleTimeString())
             }
         }).catch(error =>{
             console.log(error)

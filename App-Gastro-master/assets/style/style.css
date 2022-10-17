@@ -5,6 +5,15 @@
 body{
     background-color: rgba(219, 17, 17, 0.8);
 }
+@media screen and (max-width:500px) {
+    .conteiner-form{
+        width: 100px;
+        height: 100px;
+    }
+    .formulario, input{
+        width: 10%;
+    }
+}
 .conteiner-form{
     width: 500px;
     height: 400px;
@@ -17,7 +26,7 @@ body{
 }
 
 .formulario,input{
-    width: 80%;
+    width: 90%;
     box-sizing: border-box;
     text-align: center;
     padding: 10px;
@@ -25,10 +34,17 @@ body{
 }   
 h1{
     position: relative;
-    top: 20%;
+    top: 10%;
     font-size: 30px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Fira Sans', sans-serif;;
     text-align: center;
+}
+h2{
+    position: relative;
+    top: 15%;
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;;
+    text-align: center; 
 }
 a{
     font-size: 10px;
@@ -42,6 +58,7 @@ a{
 a:hover{
     text-decoration: underline goldenrod;
 }
+/*ESCOLHER CHEF*/
 .conteiner-novoUsuario{
     width: 500px;
     height: 400px;
@@ -60,6 +77,7 @@ a:hover{
     grid-template-columns: auto auto auto auto;
     justify-items: center;
     align-items: center;
+    overflow-x: hidden;
 }
 .conteiner-titulo{
     width: 100%;
@@ -69,10 +87,11 @@ a:hover{
     overflow-x: hidden;
     background-color: black;
 }
-h1{
+#choice{
     margin-top: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gold;
+    font-family: 'Fira Sans', sans-serif;;
+    color: goldenrod;
+    font-weight: bold;
 }
 .conteiner-chef {
     width: 300px;
@@ -87,25 +106,25 @@ h1{
     background: linear-gradient(black, goldenrod);
     font-size: 30px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Fira Sans', sans-serif;;
 }
 .c2{
     background: linear-gradient(black, goldenrod);
     font-size: 30px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Fira Sans', sans-serif;;
 }
 .c3{
     background: linear-gradient(black, goldenrod);
     font-size: 30px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Fira Sans', sans-serif;;
 }
 .c4{
     background: linear-gradient(black, goldenrod);
     font-size: 30px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Fira Sans', sans-serif;;
 }
 img,a {
     width: 200px;
@@ -116,11 +135,11 @@ img,a {
 }
 .subconteudo{
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Fira Sans', sans-serif;;
 }
 .pratos{
     font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Fira Sans', sans-serif;;
 }
 
 
@@ -179,18 +198,18 @@ img,a {
     position: absolute;
     color: black;
     top: 400px;
-    left: 520px;
+    left: 450px;
     background-color: white;
 }
 #finalizarPedido{
     width: 300px;
     position: absolute;
-    top: 450px;
-    left: 560px;
+    top: 250px;
+    left: -380px;
 }
 #pedido{
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Fira Sans', sans-serif;
     margin-top: 100px;
    
 }
@@ -206,4 +225,11 @@ img,a {
     justify-content: center;
     align-content: center;
    
+}
+#backToStartPedido{
+    display: inline-block;
+    position: absolute;
+    top: 80% ;
+    left: 40%;
+    font-size: 25px;
 }
