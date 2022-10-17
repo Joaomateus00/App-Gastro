@@ -16,7 +16,12 @@ body{
     top: 20%;
     left: 30%;
 }
-
+#voltarLogin{
+    position: relative;
+    width: 300px;
+    left: calc(38% - 7px);
+    top: 432px;
+}
 .formulario,input{
     width: 90%;
     box-sizing: border-box;
@@ -227,11 +232,24 @@ img,a {
 }
 @media screen and (max-width:600px) {
     .conteiner-form{
-        width: 400px;
-        height: 350px;
+        width: 230px;
+        height: 300px;
+        font-size: 20px;
+        left: 0%;
+        top: 0%;
+        overflow-y: hidden;
+    }
+    #bemvindo{
+        font-size: 20px;
+        top: 10%;
+    }
+    h2{
+        font-size: 20px;
+        position: relative;
+        top: 10%;
     }
     .formulario, input{
-        width: 90%;
+        width: 100%;
     }
     .conteiner-principal{
         display: grid;
@@ -245,16 +263,16 @@ img,a {
     }
     .foodPictures{
         width: 150px;
-        height: 150px;
-        left: 0%;
+        height: 130px;
+        left: -10%;
     }
     #backToStart{
         left: 20%;
-        top: calc(100% + 250px);
+        top: calc(70% + 250px);
     }
     #escolha{
         left: 25%;
-        top: calc(100% + 200px);
+        top: calc(65% + 200px);
     }
     .form-pedido{
         left: 5%;
