@@ -49,6 +49,9 @@ function calc(){
     }
     
 }
+
+
+
 function attSelect(){
     let select = document.getElementById('foodtype');
     var optionText = select.options[select.selectedIndex];

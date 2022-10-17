@@ -230,6 +230,13 @@ img,a {
     left: 40%;
     font-size: 25px;
 }
+#resultadopedido{
+    position: absolute;
+    color: black;
+    top: 400px;
+    left: 450px;
+    background-color: white;
+}
 @media screen and (max-width:600px) {
     .conteiner-form{
         width: 230px;
