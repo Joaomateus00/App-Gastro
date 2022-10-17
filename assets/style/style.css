@@ -5,15 +5,7 @@
 body{
     background-color: rgba(219, 17, 17, 0.8);
 }
-@media screen and (max-width:500px) {
-    .conteiner-form{
-        width: 100px;
-        height: 100px;
-    }
-    .formulario, input{
-        width: 10%;
-    }
-}
+
 .conteiner-form{
     width: 500px;
     height: 400px;
@@ -232,4 +224,56 @@ img,a {
     top: 80% ;
     left: 40%;
     font-size: 25px;
+}
+@media screen and (max-width:600px) {
+    .conteiner-form{
+        width: 400px;
+        height: 350px;
+    }
+    .formulario, input{
+        width: 90%;
+    }
+    .conteiner-principal{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .conteiner-chef{
+        width: 300px;
+        height: 500px;
+        text-align: center;
+    }
+    .foodPictures{
+        width: 200px;
+        height: 200px;
+        left: 0%;
+    }
+    #backToStart{
+        left: 20%;
+        top: calc(100% + 250px);
+    }
+    #escolha{
+        left: 25%;
+        top: calc(100% + 200px);
+    }
+    .form-pedido{
+        left: 5%;
+        width: 400px;
+        top: 20%;
+    }
+    .form-pedido,input,button{
+        width: 80%;
+    }
+    #foodtype{
+        width: 80%;
+    }
+    #backToStartPedido{
+        top: 65%;
+        left: 20%;
+    }
+    #finalizarPedido{
+        top: -8%;
+        left: -18%;
+        width: 252px;
+    }
 }
