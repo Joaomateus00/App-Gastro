@@ -2,25 +2,30 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgba(219, 17, 17, 0.8);
+#pagina-login{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+body{
+    background: rgb(191,22,22);
+    background: linear-gradient(90deg, rgba(191,22,22,1) 27%, rgba(252,176,69,1) 99%);
+}
 .conteiner-form{
     width: 500px;
     height: 400px;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
     position: absolute;
     top: 20%;
     left: 30%;
 }
 #voltarLogin{
     position: relative;
-    width: 300px;
-    left: calc(38% - 7px);
-    top: 432px;
+    width: 430px;
+    left: calc(33% - 7px);
+    top: 450px;
+    border-radius: 10px;
 }
 .formulario,input{
     width: 90%;
@@ -28,6 +33,7 @@ body{
     text-align: center;
     padding: 10px;
     margin: auto;
+    border-radius: 10px;
 }   
 h1{
     position: relative;
@@ -35,13 +41,25 @@ h1{
     font-size: 30px;
     font-family: 'Fira Sans', sans-serif;;
     text-align: center;
+    color: white;
 }
 h2{
     position: relative;
     top: 15%;
     font-size: 30px;
     font-family: 'Fira Sans', sans-serif;;
-    text-align: center; 
+    text-align: center;
+    color: white; 
+}
+#btn-login:hover{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: gray;
+    font-size: 16px;
+}
+#btn-cadastro:hover{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: gray;
+    font-size: 16px;
 }
 a{
     font-size: 10px;
@@ -51,6 +69,7 @@ a{
     left: -20%;
     text-decoration: none;
     color: black;
+    
 }
 a:hover{
     text-decoration: underline goldenrod;
@@ -166,49 +185,54 @@ img,a {
     top: calc(100% + 480px) ;
     left: 44%;
     font-size: 25px;
+    color: white;
 }
 #escolha{
     position: absolute;
     top: calc(100% + 440px);
     left: 45%;
     font-size: 25px;
+    color: white;
 }
 /*CSS FINALIZANDO PEDIDO*/
 .form-pedido{
     width: 300px;
     height: 300px;
     position: relative;
-    left: 33%;
-    top:  -10%;
+    left: 77%;
+    top:  -15%;
 }
 .form-pedido,input,button{
-    width: 70%;
+    width: 100%;
     box-sizing: border-box;
     padding: 12px;
 }
 #foodtype{
-    width: 70%;
+    width: 100%;
     text-align: center;
     padding: 12px;
+    border-radius: 10px;
 }
 #resultado{
     position: absolute;
     color: black;
-    top: 400px;
-    left: 450px;
+    top: 500px;
+    left: 45%;
     background-color: white;
 }
+
 #finalizarPedido{
+    height: 50px;
     width: 300px;
     position: absolute;
     top: 250px;
-    left: -380px;
+    left: 0%;
 }
+
 #pedido{
     font-size: 50px;
     font-family: 'Fira Sans', sans-serif;
-    margin-top: 100px;
-   
+    width: 450px;
 }
 #voltar{
     width: 300px;
@@ -221,29 +245,40 @@ img,a {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-   
 }
 #backToStartPedido{
     display: inline-block;
     position: absolute;
-    top: 80% ;
-    left: 40%;
+    top: 80%;
+    left: 50%;
     font-size: 25px;
+    color: white;
 }
-#resultadopedido{
+label{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#pedido{
     position: absolute;
     color: black;
-    top: 400px;
-    left: 450px;
-    background-color: white;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+    font-size: 25px;
+    
 }
 @media screen and (max-width:600px) {
+    #pagina-login{
+        background-image: url(../images/background.jpg);
+        background-size: auto;
+    }
     .conteiner-form{
         width: 230px;
         height: 300px;
         font-size: 20px;
-        left: 0%;
-        top: 0%;
+        left: 20%;
+        top: 20%;
         overflow-y: hidden;
     }
     #bemvindo{
@@ -284,7 +319,7 @@ img,a {
     .form-pedido{
         left: 5%;
         width: 400px;
-        top: 20%;
+        top: -30%;
     }
     .form-pedido,input,button{
         width: 80%;
@@ -293,18 +328,23 @@ img,a {
         width: 80%;
     }
     #resultado{
-        left: 5%;
+        left: 0%;
         top: 50%;
         font-size: 15px;
         text-align: center;
     }
     #backToStartPedido{
-        top: 65%;
-        left: 20%;
+        top: calc(100% + 60px);
+        left: 15%;
     }
     #finalizarPedido{
         top: -8%;
         left: -18%;
         width: 252px;
+    }
+    #pedido{
+        position: absolute;
+        top: 55%;
+        width: 300px;
     }
 }

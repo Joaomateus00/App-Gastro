@@ -14,9 +14,13 @@
     
     <div class="conteiner-principal">
         <div class="form-pedido">
+            <label for="pessoas">Informe o Número de Convidados</label>
             <input type="number" id="pessoas" name="pessoas" placeholder="Numeros de Convidados" required>
+            <label for="data">Informe a Data que Você Deseja</label>
             <input type="date" name="data" id="data" placeholder="Para Qual Dia Você Deseja Marcar ?">
+            <label for="local">Informe o seu Endereço</label>
             <input type="text" name="local" id="local" placeholder="Qual o seu endereço?">
+            <label for="foodtype">Qual o tipo de comida que você deseja ?</label>
             <select id="foodtype" required onchange="attSelect()">
                 <option value="blank" >Selecione o Tipo de Comida</option>
                 <option value="comidaTailandesa">Comida Tailandesa</option>
@@ -24,14 +28,17 @@
                 <option value="comidaFrancesa" >Comida Francesa</option>
                 <option value="comidaItaliana">Comida Italiana</option>
             </select>
-            <button onclick="calc()">Calcular</button>
+            <button id="btn-calc" onclick="calc()" >Calcular</button>
+            <button onclick="pedido()">Mostrar Pedido</button>
             
         </div>
         <div id="resultado">
         
         </div>
-        
-        <a href="finalizarPedido.html"><button id="finalizarPedido" onclick="mostrarResultado()">Finalizar Pedido</button><a/>
+        <div id="pedido">
+
+        </div>
+        <!-- <a href="finalizarPedido.html"><button id="finalizarPedido">Finalizar Pedido</button><a/> -->
         <a id="backToStartPedido" href="EscolherChef.html">Voltar ao Inicio</a>
     </div>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>

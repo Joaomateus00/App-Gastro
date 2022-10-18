@@ -36,9 +36,10 @@ function login(){
                 alert ('Novo login as '+ new Date().toLocaleTimeString())
             }
         }).catch(error =>{
-            console.log(error)
+            alert ("O endereço de email está incorreto")
         })
     })
+    
 }
 
 

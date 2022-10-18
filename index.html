@@ -10,15 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
-<body>
+<body id="pagina-login">
     <div class="conteiner-form">
         <h1 id="bemvindo">BEM VINDO!</h1>
         <h2>FAÇA SEU LOGIN</h2>
         <form action="post" class="formulario">
-            <input type="email" name="email" id="email" placeholder="Digite seu email: ">
-            <input type="password" name="senha" id="password" placeholder="Digite sua senha : ">
+            <input type="email" name="email" id="email" placeholder="Digite seu email: " required>
+            <input type="password" name="senha" id="password" placeholder="Digite sua senha: " required>
             <input id="btn-login" type="button" value="Login" onclick="login()">
-            <a href="cadastro.html"><input type="button" value="Cadastrar"></a>
+            <a id="btn-cadastro" href="cadastro.html"><input type="button" value="Cadastrar"></a>
         </form>
     </div>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>

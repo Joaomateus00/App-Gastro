@@ -59,4 +59,18 @@ function attSelect(){
     console.log(food)
 }
 attSelect()
+function pedido(){
+    let nConv = document.getElementById('pessoas').value;
+    let data = document.getElementById('data').value;
+    let address = document.getElementById('local').value;
+    let pedido = document.getElementById('pedido');
+    let select = document.getElementById('foodtype');
+    var optionText = select.options[select.selectedIndex];
+    var food = optionText.text;
+    pedido.innerHTML = `<h1> As informações do seu Pedido</h1>` + 
+    `<p> Numero de Convidados: </p> ` + nConv + 
+    `<p> A data Escolhida: </p>` + data + 
+    `<p> O endereço digitado: </p>` + address + 
+    `<p> A comida escolhida: </p> ` + food;
+}
 
